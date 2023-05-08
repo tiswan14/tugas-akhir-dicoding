@@ -284,15 +284,17 @@ footer {
 
   .hero .container {
     flex-direction: column-reverse;
-    padding: 60px 0px;
+    padding: 0px;
   }
 
   .hero .kartun img {
     width: 200px;
+    margin-top: 80px;
   }
 
   .hero .bio {
     text-align: center;
+    height: 370px;
   }
 
   .hero .bio h1 {
