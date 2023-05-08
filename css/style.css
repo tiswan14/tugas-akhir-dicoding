@@ -1,0 +1,361 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  list-style-type: none;
+}
+
+:root {
+  --primary: #7950f2;
+  --bg: #ffff;
+  --text: #101113;
+}
+
+h1 {
+  color: #25262b;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: var(--primary);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Rubik", sans-serif;
+}
+
+/* NAVBAR SECTION */
+nav .container {
+  background: var(--bg);
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 160px;
+  border: 1px solid #e9ecef;
+}
+
+nav .logo h1 {
+  color: var(--primary);
+  font-size: 27px;
+}
+
+nav .nav-list ul {
+  display: flex;
+  gap: 75px;
+}
+
+nav .nav-list ul li.active a {
+  color: var(--primary);
+}
+
+nav .nav-list ul li a {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+nav .menu,
+nav .close {
+  font-size: 27px;
+  display: none;
+}
+/* END NAVBAR SECTION */
+
+/* HERO SECTION */
+.hero .container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero .bio h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.hero .bio h2 {
+  margin-top: -6px;
+  margin-bottom: 6px;
+  font-size: 30px;
+}
+
+.hero .bio p {
+  font-size: 20px;
+}
+
+.hero .kartun img {
+  width: 250px;
+}
+
+/* END HERO SECTION */
+
+/* ABOUT SECTION */
+
+.about .container {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.about .profile img {
+  width: 240px;
+  border-radius: 15px;
+}
+
+.about aside {
+  width: 560px;
+  margin-bottom: 25px;
+}
+
+.about aside h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* END ABOUT SECTION */
+/* CONTACT SECTION */
+.contact .container {
+  height: 100vh;
+  padding: 0px 235px;
+  display: flex;
+}
+
+.contact .social-media p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.contact .social-media ul li {
+  font-size: 20px;
+  margin-left: 30px;
+  list-style-type: circle;
+}
+
+.contact .social-media ul li a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 20px 0px;
+  text-align: center;
+  border-top: 1px solid #ced4da;
+}
+
+/*END CONTACT SECTION */
+.message .container {
+  padding: 0px 235px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -350px;
+  height: 60vh;
+}
+
+.message .input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.message .input label {
+  margin-bottom: 10px;
+}
+
+.message .input label span {
+  color: red;
+  font-weight: bold;
+}
+
+.message .input input {
+  height: 45px;
+  width: 700px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #ced4da;
+  padding-left: 15px;
+}
+
+.message .input button {
+  margin: 0 auto;
+  background: var(--primary);
+  color: var(--bg);
+  font-weight: 600;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+}
+
+.message .input .btn {
+  margin: 0 auto;
+}
+
+.message .input .btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  font-size: 16px;
+}
+
+.message .input .btn button .send {
+  margin-top: 2px;
+}
+
+.message .input input:focus {
+  border: 3px solid var(--primary);
+}
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 37px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  p {
+    font-size: 17px;
+  }
+  nav .container {
+    padding: 0px 70px;
+  }
+
+  nav .nav-list .list {
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    top: 68px;
+    right: -768px;
+    width: 100%;
+    height: 250px;
+    background: #e9ecef;
+    transition: all 0.3s ease;
+  }
+
+  nav .nav-list ul li {
+    margin-top: 10px;
+  }
+
+  nav .nav-list .list.list-active {
+    right: 0;
+  }
+
+  nav .menu {
+    display: flex;
+  }
+
+  nav .menu.menu-active {
+    display: none;
+  }
+
+  .nav .close {
+    display: none;
+  }
+  nav .close.close-active {
+    display: flex;
+  }
+
+  .hero .container {
+    flex-direction: column-reverse;
+  }
+
+  .hero .kartun img {
+    width: 200px;
+  }
+
+  .hero .bio {
+    text-align: center;
+    margin-top: -50px;
+  }
+
+  .hero .bio h1 {
+    font-size: 40px;
+  }
+
+  .hero .bio h2 {
+    font-size: 27px;
+  }
+
+  .about .container {
+    gap: 15px;
+    height: 90vh;
+  }
+
+  .about .profile img {
+    width: 230px;
+    margin-top: 50px;
+  }
+
+  .about aside h1 {
+    font-size: 35px;
+  }
+
+  .about aside h2 {
+    font-size: 30px;
+  }
+
+  .about aside p {
+    font-size: 17px;
+  }
+
+  .contact .container {
+    padding: 0px 60px;
+  }
+
+  .message .container {
+    margin-top: -170px;
+    padding: 0px 60px;
+  }
+
+  .message .input input {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  nav .container {
+    padding: 0 40px;
+  }
+
+  .about .container {
+    padding: 0px 30px;
+  }
+
+  .contact .container {
+    padding: 0 30px;
+    margin-top: 200px;
+  }
+
+  .message .container {
+    padding: 0 30px;
+    margin-top: -500px;
+    height: 50vh;
+  }
+}
