@@ -297,7 +297,7 @@ footer {
 
   .hero .container {
     flex-direction: column-reverse;
-    gap: 10px;
+    gap: 20px;
   }
 
   .hero .kartun img {
@@ -319,8 +319,7 @@ footer {
   }
 
   .about .container {
-    gap: 15px;
-    height: 90vh;
+    gap: 10px;
   }
 
   .about .profile img {
@@ -345,8 +344,6 @@ footer {
   }
 
   .message .container {
-    margin-top: -170px;
-    padding: 0px 60px;
   }
 
   .message .input input {
