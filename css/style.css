@@ -30,9 +30,6 @@ p {
   font-size: 18px;
 }
 
-.container {
-  padding: 0 235px;
-}
 html {
   scroll-behavior: smooth;
 }
@@ -85,9 +82,9 @@ nav .nav-list ul li a {
 
 .bar {
   display: block;
-  width: 31px;
-  height: 4px;
-  border-radius: 4px;
+  width: 27px;
+  height: 3px;
+  border-radius: 6px;
   background: black;
   margin: 5px 0;
   transition: all 0.25s ease-in-out;
@@ -102,7 +99,7 @@ nav .nav-list ul li a {
 }
 
 .change .bar3 {
-  transform: rotate(45deg) translate(-5px, -4px);
+  transform: rotate(45deg) translate(-3px, -2px);
 }
 
 /* END NAVBAR SECTION */
@@ -110,8 +107,9 @@ nav .nav-list ul li a {
 /* HERO SECTION */
 .hero .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 150px;
   height: 100vh;
 }
 
@@ -279,7 +277,7 @@ footer {
     flex-direction: column;
     text-align: center;
     top: 68px;
-    left: 768px;
+    right: 768px;
     width: 100%;
     height: 250px;
     background: #e9ecef;
