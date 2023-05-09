@@ -165,9 +165,10 @@ nav .nav-list ul li a {
 /* END ABOUT SECTION */
 /* CONTACT SECTION */
 .contact .container {
-  height: 100vh;
-  padding: 0px 235px;
   display: flex;
+  flex-direction: column;
+  padding: 0 235px;
+  height: 100vh;
 }
 
 .contact .social-media p {
@@ -187,40 +188,34 @@ nav .nav-list ul li a {
   text-decoration: underline;
 }
 
-footer {
-  padding: 20px 0px;
-  text-align: center;
-  border-top: 1px solid #ced4da;
+.contact .message {
+  margin-top: 50px;
 }
 
-/*END CONTACT SECTION */
-.message .container {
-  padding: 0px 235px;
+.contact .message {
   display: flex;
   flex-direction: column;
-  margin-top: -350px;
-  height: 60vh;
 }
 
-.message .input {
+.contact .message .input {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 15px;
 }
 
-.message .input label {
+.contact .message .input label {
   margin-bottom: 10px;
 }
 
-.message .input label span {
+.contact .message .input label span {
   color: red;
   font-weight: bold;
 }
 
-.message .input input {
+.contact .message .input input {
   height: 45px;
-  width: 700px;
+  width: 100%;
   margin-bottom: 10px;
   border-radius: 8px;
   outline: none;
@@ -228,7 +223,7 @@ footer {
   padding-left: 15px;
 }
 
-.message .input button {
+.contact .message .input button {
   margin: 0 auto;
   background: var(--primary);
   color: var(--bg);
@@ -238,11 +233,11 @@ footer {
   height: 45px;
 }
 
-.message .input .btn {
+.contact .message .input .btn {
   margin: 0 auto;
 }
 
-.message .input .btn button {
+.contact .message .input .btn button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,13 +245,22 @@ footer {
   font-size: 16px;
 }
 
-.message .input .btn button .send {
+.contact .message .input .btn button .send {
   margin-top: 2px;
 }
 
-.message .input input:focus {
+.contact .message .input input:focus {
   border: 3px solid var(--primary);
 }
+
+footer {
+  padding: 20px 0px;
+  text-align: center;
+  border-top: 1px solid #ced4da;
+}
+
+/*END CONTACT SECTION */
+
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
   h1 {
@@ -276,15 +280,21 @@ footer {
     position: absolute;
     flex-direction: column;
     text-align: center;
-    top: 68px;
-    right: 768px;
+    gap: 50px;
+    top: 69px;
+    right: -768px;
     width: 100%;
     height: 250px;
-    background: #e9ecef;
+    background: var(--bg);
     transition: all 0.3s ease;
   }
+
+  nav .nav-list ul li {
+    padding: 10px 0px;
+    border-bottom: 2px solid #ced4da;
+  }
   nav .nav-list .list.active {
-    left: 0;
+    right: 0;
   }
 
   nav .nav-list ul li {
@@ -340,10 +350,8 @@ footer {
   }
 
   .contact .container {
-    padding: 0px 60px;
-  }
-
-  .message .container {
+    padding: 100px 85px;
+    height: 110vh;
   }
 
   .message .input input {
