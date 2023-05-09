@@ -109,7 +109,7 @@ nav .nav-list ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 500px;
+  gap: 150px;
   height: 100vh;
 }
 
