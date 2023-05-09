@@ -344,11 +344,11 @@ footer {
   }
 
   .about aside p {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .contact .container {
-    padding: 100px 85px;
+    padding: 0px 85px;
   }
 
   .message .input input {
@@ -379,6 +379,5 @@ footer {
 
   .contact .container {
     padding: 0 30px;
-    margin-top: 200px;
   }
 }
