@@ -167,8 +167,9 @@ nav .nav-list ul li a {
 .contact .container {
   display: flex;
   flex-direction: column;
-  padding: 0 235px;
   height: 100vh;
+  padding-left: 235px;
+  padding-right: 235px;
 }
 
 .contact .social-media p {
@@ -189,7 +190,7 @@ nav .nav-list ul li a {
 }
 
 .contact .message {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .contact .message {
@@ -270,7 +271,7 @@ footer {
     font-size: 27px;
   }
   p {
-    font-size: 17px;
+    font-size: 19px;
   }
   nav .container {
     padding: 0px 70px;
@@ -307,7 +308,7 @@ footer {
 
   .hero .container {
     flex-direction: column-reverse;
-    gap: 20px;
+    gap: 30px;
   }
 
   .hero .kartun img {
