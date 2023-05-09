@@ -1,7 +1,10 @@
-const menu = document.querySelector(".menu");
-const closed = document.querySelector(".close");
-const navList = document.querySelector(".list");
+const menuToggle = document.querySelector(".menu");
+const list = document.querySelector(".list");
 
-menu.addEventListener("click", () => {
-  navList.classList.toggle("list-active");
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("change");
+});
+
+menuToggle.addEventListener("click", () => {
+  list.classList.toggle("active");
 });
