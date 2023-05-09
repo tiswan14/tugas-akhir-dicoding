@@ -139,7 +139,6 @@ nav .nav-list ul li a {
 .about .container {
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 120px;
@@ -284,7 +283,7 @@ footer {
     top: 69px;
     right: -768px;
     width: 100%;
-    height: 250px;
+    height: 253px;
     background: var(--bg);
     transition: all 0.3s ease;
   }
@@ -311,7 +310,7 @@ footer {
   }
 
   .hero .kartun img {
-    width: 200px;
+    width: 250px;
     margin-top: 80px;
   }
 
@@ -329,6 +328,7 @@ footer {
   }
 
   .about .container {
+    flex-direction: column;
     gap: 10px;
   }
 
@@ -351,7 +351,6 @@ footer {
 
   .contact .container {
     padding: 100px 85px;
-    height: 110vh;
   }
 
   .message .input input {
