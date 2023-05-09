@@ -297,7 +297,7 @@ footer {
 
   .hero .container {
     flex-direction: column-reverse;
-    row-gap: 10px;
+    gap: 10px;
   }
 
   .hero .kartun img {
