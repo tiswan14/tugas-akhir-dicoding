@@ -142,7 +142,6 @@ nav .nav-list ul li a {
   justify-content: center;
   align-items: center;
   gap: 120px;
-  margin-bottom: 30px;
 }
 
 .about aside img {
@@ -152,7 +151,7 @@ nav .nav-list ul li a {
 
 .about .description {
   width: 560px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .about .description h2 {
