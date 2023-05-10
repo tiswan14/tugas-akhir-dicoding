@@ -14,6 +14,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <!-- Font Rubik -->
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- AOS -->
 </head>
 
 <body>
@@ -46,12 +49,12 @@
       <div class="container">
         <article>
           <div class="bio">
-            <h1>Tiswan</h1>
-            <h2>Frontend Developer</h2>
-            <p>Hi everyone, welcome to my Portfolio website.</p>
+            <h1 data-aos="fade-right" data-aos -duration="600">Tiswan</h1>
+            <h2 data-aos="fade-down" data-aos -duration="800">Frontend Developer</h2>
+            <p data-aos="fade-up" data-aos -duration="1000">Hi everyone, welcome to my Portfolio website.</p>
           </div>
         </article>
-        <div class="kartun">
+        <div class="kartun" data-aos="fade-left" data-aos -duration="1200">
           <img src="img/kartun.svg" alt="pria kartun kacamata" />
         </div>
       </div>
@@ -61,19 +64,19 @@
     <div class="about" id="about">
       <div class="container">
         <aside>
-          <div class="profile">
+          <div class="profile" data-aos="fade-right" data-aos -duration="300">
             <img src="img/profile.jpeg" alt="tiswan" />
           </div>
           <div class="description">
-            <h1>About Me</h1>
-            <h2>Tiswan</h2>
-            <p> Hi everyone, my name is Tiswan. I am a Frontend Developer, Informatics Engineering Student, Free and
-              Open Source Software Enthusiast, and Linux Nerd I live in Pangandaran, Indonesia. I was born in Ciamis,
-              August 21, 2002. I am 20 years old. I am an Informatics Engineering Student from STMIK, Tasikmalaya
-              University. Coding has been my passion and hobby since I was 18 years old, and I have loved computers
-              since I was a kid. Besides coding, I like listening to music. My favorite genres are Pop Punk,
-              Post-hardcore, Metalcore, Nu-metal and Electronicore. I also like to play games. My favorite game is
-              Mobile Legend. </p>
+            <h1 data-aos="fade-down" data-aos -duration="600">About Me</h1>
+            <h2 data-aos="fade-left" data-aos -duration="800">Tiswan</h2>
+            <p data-aos="fade-up" data-aos -duration="1000"> Hi everyone, my name is Tiswan. I am a Frontend Developer,
+              Informatics Engineering Student, Free and Open Source Software Enthusiast, and Linux Nerd I live in
+              Pangandaran, Indonesia. I was born in Ciamis, August 21, 2002. I am 20 years old. I am an Informatics
+              Engineering Student from STMIK, Tasikmalaya University. Coding has been my passion and hobby since I was
+              18 years old, and I have loved computers since I was a kid. Besides coding, I like listening to music. My
+              favorite genres are Pop Punk, Post-hardcore, Metalcore, Nu-metal and Electronicore. I also like to play
+              games. My favorite game is Mobile Legend. </p>
           </div>
         </aside>
       </div>
@@ -85,9 +88,10 @@
   <div class="contact" id="contact">
     <div class="container">
       <div class="social-media">
-        <h1>Contact</h1>
-        <p>Please don’t hesitate to get in touch with me by following my social media below:</p>
-        <ul>
+        <h1 data-aos="fade-right" data-aos -duration="600">Contact</h1>
+        <p data-aos="fade-down" data-aos -duration="800">Please don’t hesitate to get in touch with me by following my
+          social media below:</p>
+        <ul data-aos="fade-up" data-aos -duration="1000">
           <li>Github - <a href="https://github.com/tiswan14/" target="_blank">@tiswan14</a></li>
           <li>Instagram - <a href="https://instagram.com/tisw4nn
             " target="_blank">@tisw4nn</a></li>
@@ -95,8 +99,8 @@
         </ul>
       </div>
       <div class="message">
-        <h1>Message</h1>
-        <div class="input">
+        <h1 data-aos="fade-up" data-aos -duration="600">Message</h1>
+        <div class="input" data-aos="fade-left" data-aos -duration="800">
           <label for="full-name">Full Name <span>*</span></label>
           <input type="text" id="full-name" name="full-name" placeholder="Your Name">
           <label for="email" id="email">Email <span>*</span></label>
@@ -129,5 +133,12 @@
 <!-- Icona -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- Icona -->
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- AOS -->
 
 </html>
