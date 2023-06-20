@@ -161,7 +161,26 @@ nav .nav-list ul li a {
   margin-bottom: 10px;
 }
 
+.about aside .description h3 {
+  color: #101113;
+  margin-bottom: 10px;
+}
+
 /* END ABOUT SECTION */
+/* TUGAS SECTION */
+.tugas {
+  height: 100vh;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tugas h1 {
+  color: #ced4da;
+}
+/*END TUGAS SECTION */
+
 /* CONTACT SECTION */
 .contact .container {
   display: flex;
@@ -396,11 +415,21 @@ footer {
     padding: 0 40px;
   }
 
+  .about {
+    height: 110vh;
+  }
+
   .about aside .description {
     width: 100%;
   }
 
   .contact .container {
     padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .about {
+    height: 130vh;
   }
 }
