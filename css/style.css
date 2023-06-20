@@ -343,6 +343,10 @@ footer {
     font-size: 27px;
   }
 
+  .about {
+    height: 120vh;
+  }
+
   .about aside {
     flex-direction: column;
     gap: 30px;
